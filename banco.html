@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco santander</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #b30000;
+        }
+
+        input, button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #800000;
+        }
+
+        #resposta {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Banco santander</h1>
+    <div id="img"></div>
+    <img src="https://gerenciamentodeatendimento.com.br/wp-content/uploads/2018/02/logo-specto-case-santander-01-300x300.png" alt="banco santander" width="110" height="110">
+    <input type="number" id="valor" placeholder="Digite o valor">
+    <input type="text" id="chavePix" placeholder="Digite a chave Pix">
+
+    <button onclick="verSaldo()">Ver Saldo</button>
+    <button onclick="depositar()">Depositar</button>
+    <button onclick="sacar()">Sacar</button>
+    <button onclick="fazerPix()">Enviar Pix</button>
+
+    <div id="resposta"></div>
+</div>
+
+<script src="banco.js"></script>
+</body>
+</html>
